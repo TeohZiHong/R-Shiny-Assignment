@@ -3,6 +3,7 @@ library(shiny)
 library(scales)
 # for clean_names()
 library(janitor)
+library(ggplot2)
 
 ui <- fluidPage(
   
