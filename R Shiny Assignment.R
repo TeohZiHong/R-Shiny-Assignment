@@ -26,8 +26,10 @@ ui <- fluidPage(
 server <- function(input, output) {
   
   raw_data <- reactive({
+    
     req(input$claims_file)
     clean_names(read.csv(input$claims_file$datapath))
+    
   })
   
   cumulative_triangle <- reactive({
